@@ -1,0 +1,838 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "06b986f7-14f6-4cfe-89dc-cad697f37f0e")
+	(paper "A4")
+	(title_block
+		(title "T-Display S3 + BME280 (I2C)")
+		(date "2026-08-24")
+		(rev "1.0")
+		(company "sohmatrix")
+		(comment 1 "T-Display S3 standard I2C: SCL=GPIO01, SDA=GPIO2")
+		(comment 2 "BME280 module: CSB=3.3V for I2C, SDO=GND for address 0x76")
+		(comment 3 "Use 3.3V logic/power")
+		(comment 4 "Assumes BME280 breakout module with I2C pull-ups")
+	)
+	(lib_symbols
+		(symbol "TDisplayS3_BME280_I2C:BME280_MODULE"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 10.668 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BME280_MODULE"
+				(at 0 8.128 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BME280_MODULE_0_1"
+				(rectangle
+					(start -7.62 6.35)
+					(end 7.62 -6.35)
+					(stroke
+						(width 0.3048)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "BME280_MODULE_1_1"
+				(pin power_in line
+					(at -12.7 4.064 0)
+					(length 5.08)
+					(name "VCC_3V3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 2.032 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -2.032 0)
+					(length 5.08)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -4.064 0)
+					(length 5.08)
+					(name "CSB"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -6.096 0)
+					(length 5.08)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TDisplayS3_BME280_I2C:TDISPLAY_S3_I2C"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J1"
+				(at 0 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "T-Display S3"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TDISPLAY_S3_I2C_0_1"
+				(rectangle
+					(start -6.35 5.08)
+					(end 6.35 -5.08)
+					(stroke
+						(width 0.3048)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TDISPLAY_S3_I2C_1_1"
+				(pin passive line
+					(at 11.43 3.048 180)
+					(length 5.08)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 1.016 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 11.43 -1.016 180)
+					(length 5.08)
+					(name "GPIO01_SCL"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 11.43 -3.048 180)
+					(length 5.08)
+					(name "GPIO02_SDA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "Connections @P2(PinHeader12)"
+		(exclude_from_sim no)
+		(at 67.31 88.9 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "1dfada4e-5892-4ca0-ae4b-9722cffbbc42")
+	)
+	(text "SDO = GND -> 0x76"
+		(exclude_from_sim no)
+		(at 186.69 85.852 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "250f0c93-2395-4099-9843-8c77d06b082f")
+	)
+	(text "T-Display S3 I2C pins: GPIO01=SCL, GPIO02=SDA"
+		(exclude_from_sim no)
+		(at 21.59 30.48 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "544ad9e9-c0da-4d68-9aae-f0a4c27355ca")
+	)
+	(text "If your BME280 breakout does not include SDA/SCL pull-up resistors, add approximately 4.7k ohm pull-ups to 3.3V."
+		(exclude_from_sim no)
+		(at 68.58 110.49 0)
+		(effects
+			(font
+				(size 1.397 1.397)
+			)
+			(justify left bottom)
+		)
+		(uuid "a63ccd43-7acb-48d1-9341-7c56c9065e99")
+	)
+	(text "T-Display S3 to BME280 via I2C"
+		(exclude_from_sim no)
+		(at 21.59 24.13 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c1f551a5-f54d-455c-af34-9fad1e766717")
+	)
+	(text "3V3 -> VCC\nGND -> GND\nGPIO01 -> SCL\nGPIO02 -> SDA"
+		(exclude_from_sim no)
+		(at 68.58 99.06 0)
+		(effects
+			(font
+				(size 1.397 1.397)
+			)
+			(justify left bottom)
+		)
+		(uuid "c2e06765-6d96-4ded-80e7-12f2921c7452")
+	)
+	(text "CSB = 3.3V -> I2C mode"
+		(exclude_from_sim no)
+		(at 186.69 83.312 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c3da86cb-c7bb-4b4b-a0a0-bc20ccb5d56d")
+	)
+	(text "BME280: CSB -> 3.3V (I2C mode), SDO -> GND (I2C address 0x76)"
+		(exclude_from_sim no)
+		(at 21.59 34.29 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "f8eaaf0c-1882-4986-be14-916d21dc9799")
+	)
+	(junction
+		(at 157.48 77.724)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8a96425-7804-4429-9d70-05d1dd152273")
+	)
+	(junction
+		(at 166.37 74.676)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb5f4907-6d53-4c91-aa6c-0f052bc99b2a")
+	)
+	(wire
+		(pts
+			(xy 161.29 75.692) (xy 166.37 74.676)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ff845d3-56dc-4e17-9c9a-934e843da03b")
+	)
+	(wire
+		(pts
+			(xy 156.21 79.756) (xy 156.21 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "517f8351-8e91-4b7e-af94-9fc09e52b874")
+	)
+	(wire
+		(pts
+			(xy 154.94 81.788) (xy 154.94 80.772)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5597d2ee-e950-4b09-af2b-3e7a56f29678")
+	)
+	(wire
+		(pts
+			(xy 157.48 76.708) (xy 166.37 76.708)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56661e08-7a4c-4329-9221-ddfccb0f8fc3")
+	)
+	(wire
+		(pts
+			(xy 166.37 84.836) (xy 158.75 84.836)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59568011-649e-4b23-a129-122c5c62ceb4")
+	)
+	(wire
+		(pts
+			(xy 157.48 77.724) (xy 157.48 76.708)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b457f27-b9e0-4d2c-81be-7282a48e5311")
+	)
+	(wire
+		(pts
+			(xy 158.75 84.836) (xy 158.75 77.724)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "624c7831-7486-4fe6-a820-b56b1ef34f4b")
+	)
+	(wire
+		(pts
+			(xy 166.37 82.804) (xy 161.29 82.804)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68e4ed5b-5020-474f-ad31-7440b87b6406")
+	)
+	(wire
+		(pts
+			(xy 154.94 80.772) (xy 166.37 80.772)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7757efb8-2d6e-4662-974c-8a6d4940b7d2")
+	)
+	(wire
+		(pts
+			(xy 87.63 81.788) (xy 154.94 81.788)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78f98c9f-a0ec-446c-8419-544c68c95170")
+	)
+	(wire
+		(pts
+			(xy 156.21 78.74) (xy 166.37 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f3e9d2b-a193-48e4-a32b-2201712f87eb")
+	)
+	(wire
+		(pts
+			(xy 87.63 77.724) (xy 157.48 77.724)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3defbe4-dc28-4d85-ae41-56ac59c089e8")
+	)
+	(wire
+		(pts
+			(xy 87.63 75.692) (xy 166.37 74.676)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9b52dcd-edb4-423f-bba2-889b878358a9")
+	)
+	(wire
+		(pts
+			(xy 87.63 79.756) (xy 156.21 79.756)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de0015dc-dbc2-4c99-9b9e-45206ac95b11")
+	)
+	(wire
+		(pts
+			(xy 158.75 77.724) (xy 157.48 77.724)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e74ef8fa-2eaf-4b6e-be42-232dbd131157")
+	)
+	(wire
+		(pts
+			(xy 161.29 82.804) (xy 161.29 75.692)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb2c8e8e-321e-4ec6-83f4-61e4697095e0")
+	)
+	(label "GND"
+		(at 115.57 77.724 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0fe0d5db-632e-40b5-a0b0-98f606447c66")
+	)
+	(label "3V3"
+		(at 115.57 75.692 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3ec20fc4-d229-4d40-b39d-16c3b66c8492")
+	)
+	(label "I2C_SCL_GPIO01"
+		(at 115.57 79.756 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "763a9f85-a028-4019-80e9-863ec0143945")
+	)
+	(label "I2C_SDA_GPIO02"
+		(at 115.57 81.788 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "88906264-9578-46bf-808c-c56483a64da2")
+	)
+	(symbol
+		(lib_id "TDisplayS3_BME280_I2C:TDISPLAY_S3_I2C")
+		(at 76.2 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000000000001")
+		(property "Reference" "J1"
+			(at 76.2 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "T-Display S3"
+			(at 76.2 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 76.2 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "efde28b4-e899-455a-8000-09598a68eb0e")
+		)
+		(pin "2"
+			(uuid "4099ff6c-feec-49c7-bb85-cc1a77908f98")
+		)
+		(pin "3"
+			(uuid "9ed09f01-d088-4d9a-9b7c-35a3b61bca8b")
+		)
+		(pin "4"
+			(uuid "7db8aed4-ce40-4474-9bae-1ee57a0ed9c9")
+		)
+		(instances
+			(project "TDisplayS3_BME280_I2C"
+				(path "/06b986f7-14f6-4cfe-89dc-cad697f37f0e"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TDisplayS3_BME280_I2C:BME280_MODULE")
+		(at 179.07 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000000000002")
+		(property "Reference" "U1"
+			(at 179.07 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BME280 MODULE (includes pull-up registors)"
+			(at 179.07 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 179.07 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "57ca19f5-8a04-4616-9752-bc337a5850d4")
+		)
+		(pin "2"
+			(uuid "cc485b48-9979-4e29-a2c2-f4345bcfc1d0")
+		)
+		(pin "3"
+			(uuid "b234c5b4-7a53-49ce-aa52-0cfc2a453601")
+		)
+		(pin "4"
+			(uuid "71afa3af-9f2b-46b2-a392-02cbb4d87a10")
+		)
+		(pin "5"
+			(uuid "3e22fb30-33b6-41e5-8d82-2c749c2252f9")
+		)
+		(pin "6"
+			(uuid "e833efb2-b02b-4469-a95d-d0b6ff3c1ac4")
+		)
+		(instances
+			(project "TDisplayS3_BME280_I2C"
+				(path "/06b986f7-14f6-4cfe-89dc-cad697f37f0e"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

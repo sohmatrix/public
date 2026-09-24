@@ -8,9 +8,9 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/Users/sohma/Develop/gitHub/sohmatrix/public/samplePrograms/LILYGO_T_Display_S3/Projects/001_helloWorld_ViaSerial/include",
-                "/Users/sohma/Develop/gitHub/sohmatrix/public/samplePrograms/LILYGO_T_Display_S3/Projects/001_helloWorld_ViaSerial/src",
-                "/Users/sohma/Develop/gitHub/sohmatrix/public/samplePrograms/LILYGO_T_Display_S3/Projects/001_helloWorld_ViaSerial/.pio/libdeps/lilygo-t-display-s3/GFX Library for Arduino/src",
+                "/Users/sohma/Develop/gitHub/sohmatrix/private/samplePrograms/LILYGO_T_Display_S3/Projects/001_helloWorld_ViaSerial/include",
+                "/Users/sohma/Develop/gitHub/sohmatrix/private/samplePrograms/LILYGO_T_Display_S3/Projects/001_helloWorld_ViaSerial/src",
+                "/Users/sohma/Develop/gitHub/sohmatrix/private/samplePrograms/LILYGO_T_Display_S3/Projects/001_helloWorld_ViaSerial/.pio/libdeps/lilygo-t-display-s3/GFX Library for Arduino/src",
                 "/Users/sohma/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                 "/Users/sohma/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src",
                 "/Users/sohma/.platformio/packages/framework-arduinoespressif32-libs/esp32s3/include/newlib/platform_include",
@@ -433,9 +433,9 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/Users/sohma/Develop/gitHub/sohmatrix/public/samplePrograms/LILYGO_T_Display_S3/Projects/001_helloWorld_ViaSerial/include",
-                    "/Users/sohma/Develop/gitHub/sohmatrix/public/samplePrograms/LILYGO_T_Display_S3/Projects/001_helloWorld_ViaSerial/src",
-                    "/Users/sohma/Develop/gitHub/sohmatrix/public/samplePrograms/LILYGO_T_Display_S3/Projects/001_helloWorld_ViaSerial/.pio/libdeps/lilygo-t-display-s3/GFX Library for Arduino/src",
+                    "/Users/sohma/Develop/gitHub/sohmatrix/private/samplePrograms/LILYGO_T_Display_S3/Projects/001_helloWorld_ViaSerial/include",
+                    "/Users/sohma/Develop/gitHub/sohmatrix/private/samplePrograms/LILYGO_T_Display_S3/Projects/001_helloWorld_ViaSerial/src",
+                    "/Users/sohma/Develop/gitHub/sohmatrix/private/samplePrograms/LILYGO_T_Display_S3/Projects/001_helloWorld_ViaSerial/.pio/libdeps/lilygo-t-display-s3/GFX Library for Arduino/src",
                     "/Users/sohma/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                     "/Users/sohma/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src",
                     "/Users/sohma/.platformio/packages/framework-arduinoespressif32-libs/esp32s3/include/newlib/platform_include",
